@@ -192,11 +192,10 @@ public class AIHandler : MonoBehaviour, IInputHandler
         {
             targetSteering = -targetSteering;
         }
-        //Steering = Mathf.Clamp(angle / MaxSteeringAngle, -1f, 1f);
         Steering = Mathf.Lerp(
             Steering,
             targetSteering,
-            Time.deltaTime * SteeringSmooth
+            SteeringSmooth * Time.fixedDeltaTime 
         );
     }
 
