@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using Utilities;
 
+[RequireComponent(typeof(UIDocument))]
 public class PauseScreen : NonPersistentSingleton<PauseScreen>
 {
     [field: SerializeField] public VisualElement Root { get; set; }
@@ -17,15 +18,11 @@ public class PauseScreen : NonPersistentSingleton<PauseScreen>
     [field: SerializeField] public AudioData RestartAudio { get; set; }
     [field: SerializeField] public AudioData QuitAudio { get; set; }
     [field: SerializeField] public AudioData HoverAudio { get; set; }
-    protected override void Awake()
-    {
-        base.Awake();
-        Root = GetComponent<UIDocument>().rootVisualElement;
-    }
 
     private void OnEnable()
     {
         GameManager.Instance.OnGameStateChanged += HandleGameStateChanged;
+        Root = GetComponent<UIDocument>().rootVisualElement;
 
         PauseMenu = Root.Q<VisualElement>("PauseMenu");
         PauseMenu.AddToClassList("hideUI");

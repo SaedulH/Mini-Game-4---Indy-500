@@ -1,6 +1,7 @@
 using UnityEngine;
 using Utilities;
 
+[RequireComponent(typeof(IInputHandler))]
 public class Movement : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D _rb;
@@ -43,6 +44,7 @@ public class Movement : MonoBehaviour
     {
         GameManager.Instance.OnGameStateChanged -= OnGameStateChanged;
     }
+
 
     public void AssignVehicleStats(VehicleStats stats)
     {

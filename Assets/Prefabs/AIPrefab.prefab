@@ -345,11 +345,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d8027127ffeeb48b0a5dae797c027b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIHandler
-  angleToTarget: 0
-  throttleAI: 0
-  steeringAI: 0
-  <CurrentNode>k__BackingField: {fileID: 0}
-  <Difficulty>k__BackingField: 0
+  <CurrentAIState>k__BackingField: 0
+  <RB>k__BackingField: {fileID: 0}
+  <WaypointSpline>k__BackingField: {fileID: 0}
+  <MaxSteeringAngle>k__BackingField: 0
+  <SteeringSmooth>k__BackingField: 0
+  <MaxThrottle>k__BackingField: 0
+  <MinThrottle>k__BackingField: 0
+  <MinBrakeSpeedFactor>k__BackingField: 0
+  <BrakeAngle>k__BackingField: 0
+  <BrakeTime>k__BackingField: 0
+  <StuckDetectionTime>k__BackingField: 0
+  <WallLayer>k__BackingField:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &4197701111725887477
 MonoBehaviour:
   m_ObjectHideFlags: 0

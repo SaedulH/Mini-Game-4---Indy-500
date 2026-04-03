@@ -176,9 +176,9 @@ GameObject:
   m_Component:
   - component: {fileID: 82380472}
   - component: {fileID: 82380473}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RightUnderPass_1_Collider
-  m_TagString: UnderpassCollider
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1865,23 +1865,23 @@ MonoBehaviour:
           z: -0.036376655
           w: -0.7061705
     - Position:
-        x: 4.7688293
-        y: 42.522087
+        x: 8.626694
+        y: 49.760727
         z: 0
       TangentIn:
         x: -0
         y: -0
-        z: -13.91472
+        z: -15.421338
       TangentOut:
         x: 0
         y: 0
-        z: 18.064396
+        z: 17.620543
       Rotation:
         value:
-          x: 0.671184
-          y: -0.22251299
-          z: 0.22251303
-          w: -0.67118406
+          x: -0.66309744
+          y: 0.24556428
+          z: -0.2455641
+          w: 0.66309744
     - Position:
         x: 71.135086
         y: 70.73767
@@ -1889,35 +1889,35 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -19.535751
+        z: -18.169516
       TangentOut:
         x: 0
         y: 0
-        z: 13.852499
+        z: 13.474078
       Rotation:
         value:
-          x: -0.62630427
-          y: 0.3282422
-          z: -0.32824215
-          w: 0.6263043
+          x: -0.6197661
+          y: 0.34042612
+          z: -0.34042606
+          w: 0.6197662
     - Position:
         x: 96.17143
         y: 96.96625
         z: 0
       TangentIn:
-        x: -0
-        y: -0
-        z: -7.138746
+        x: 0
+        y: 0
+        z: -11.217134
       TangentOut:
         x: 0
         y: 0
         z: 7.1033244
       Rotation:
         value:
-          x: -0.7044024
-          y: -0.061784558
-          z: 0.061784558
-          w: 0.7044023
+          x: 0.69098043
+          y: 0.15015365
+          z: -0.15015389
+          w: -0.6909803
     - Position:
         x: 63.981842
         y: 112.86236
@@ -2123,35 +2123,35 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -7.6722226
+        z: -7.4975595
       TangentOut:
         x: 0
         y: 0
-        z: 11.632528
+        z: 10.733724
       Rotation:
         value:
-          x: -0.26010904
-          y: -0.65752816
-          z: 0.65752816
-          w: 0.260109
+          x: -0.26208216
+          y: -0.6567442
+          z: 0.65674424
+          w: 0.26208198
     - Position:
-        x: -265.0676
-        y: 4.3714294
+        x: -262.27332
+        y: 8.260725
         z: 0
       TangentIn:
         x: -0
         y: -0
-        z: -13.441969
+        z: -12.701161
       TangentOut:
         x: 0
         y: 0
-        z: 13.717762
+        z: 14.253501
       Rotation:
         value:
-          x: -0.10251159
-          y: -0.6996367
-          z: 0.69963664
-          w: 0.10251153
+          x: 0.11633027
+          y: 0.69747204
+          z: -0.69747204
+          w: -0.116330296
     - Position:
         x: -258.70917
         y: -40.93248
@@ -2159,17 +2159,17 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -14.294894
+        z: -14.886414
       TangentOut:
         x: 0
         y: 0
-        z: 15.3116665
+        z: 15.356643
       Rotation:
         value:
-          x: 0.20078184
-          y: -0.678002
-          z: 0.678002
-          w: -0.20078179
+          x: 0.18937828
+          y: -0.68127525
+          z: 0.6812752
+          w: -0.18937819
     - Position:
         x: -214.19997
         y: -68.75066
@@ -2177,53 +2177,53 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -16.585135
+        z: -16.407948
       TangentOut:
         x: 0
         y: 0
-        z: 16.47396
+        z: 16.012506
       Rotation:
         value:
-          x: 0.43522906
-          y: -0.55729324
-          z: 0.55729324
-          w: -0.435229
+          x: 0.43678957
+          y: -0.556071
+          z: 0.55607104
+          w: -0.4367895
     - Position:
-        x: -162.5376
-        y: -65.174034
+        x: -164.3733
+        y: -64.73927
         z: 0
       TangentIn:
         x: -0
         y: -0
-        z: -15.488679
+        z: -15.359116
       TangentOut:
         x: 0
         y: 0
-        z: 13.98363
+        z: 14.652022
       Rotation:
         value:
-          x: -0.5894887
-          y: 0.3905165
-          z: -0.39051646
-          w: 0.5894887
+          x: -0.5925792
+          y: 0.3858107
+          z: -0.38581052
+          w: 0.59257925
     - Position:
-        x: -131.14279
-        y: -36.958447
+        x: -131.17331
+        y: -33.639275
         z: 0
       TangentIn:
         x: -0
         y: -0
-        z: -12.181977
+        z: -12.621788
       TangentOut:
         x: 0
         y: 0
-        z: 11.9045925
+        z: 11.388697
       Rotation:
         value:
-          x: 0.697202
-          y: -0.11793799
-          z: 0.11793803
-          w: -0.697202
+          x: -0.69820285
+          y: 0.111860506
+          z: -0.11186048
+          w: 0.69820285
     - Position:
         x: -137.89864
         y: 2.7818184
@@ -2231,17 +2231,17 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -12.046951
+        z: -11.343023
       TangentOut:
         x: 0
         y: 0
-        z: 11.3755455
+        z: 11.174182
       Rotation:
         value:
-          x: 0.679243
-          y: 0.19654232
-          z: -0.19654235
-          w: -0.6792431
+          x: 0.6785407
+          y: 0.19895366
+          z: -0.19895367
+          w: -0.6785407
     - Position:
         x: -167.30644
         y: 23.446758
@@ -2267,35 +2267,35 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -9.743301
+        z: -9.492668
       TangentOut:
         x: 0
         y: 0
-        z: 9.688799
+        z: 9.52052
       Rotation:
         value:
-          x: 0.15677492
-          y: 0.6895082
-          z: -0.68950826
-          w: -0.15677498
+          x: -0.14366336
+          y: -0.6923589
+          z: 0.6923589
+          w: 0.14366326
     - Position:
-        x: -192.7402
-        y: -29.010395
+        x: -189.8733
+        y: -28.939274
         z: 0
       TangentIn:
         x: -0
         y: -0
-        z: -12.976358
+        z: -13.335744
       TangentOut:
         x: 0
         y: 0
-        z: 18.458307
+        z: 18.490404
       Rotation:
         value:
-          x: -0.22350027
-          y: 0.6708559
-          z: -0.670856
-          w: 0.22350028
+          x: 0.23288094
+          y: -0.6676575
+          z: 0.66765743
+          w: -0.23288083
     - Position:
         x: -127.56617
         y: -63.981834
@@ -2303,17 +2303,17 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -22.653309
+        z: -22.049494
       TangentOut:
         x: 0
         y: 0
-        z: 19.91847
+        z: 19.720787
       Rotation:
         value:
-          x: -0.41910985
-          y: 0.5695146
-          z: -0.5695146
-          w: 0.4191099
+          x: -0.41627994
+          y: 0.57158643
+          z: -0.5715864
+          w: 0.41627994
     - Position:
         x: -70.73759
         y: -70.34027
@@ -2580,10 +2580,10 @@ MonoBehaviour:
         z: 11.018903
       Rotation:
         value:
-          x: -0.49081936
-          y: -0.50901514
-          z: 0.50901526
-          w: 0.4908192
+          x: -0.4908195
+          y: -0.50901496
+          z: 0.50901544
+          w: 0.49081898
     - Position:
         x: 18.678032
         y: -56.828484
@@ -2591,17 +2591,17 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -5.1814914
+        z: -15.698097
       TangentOut:
         x: 0
         y: 0
-        z: 5.1814914
+        z: 15.698097
       Rotation:
         value:
-          x: -0.48044366
-          y: -0.51881987
-          z: 0.51881987
-          w: 0.48044348
+          x: 0.48033077
+          y: 0.51892424
+          z: -0.51892424
+          w: -0.48033065
     m_MetaData:
     - Mode: 4
       Tension: 0.5
@@ -2609,7 +2609,7 @@ MonoBehaviour:
       Tension: 0.5
     - Mode: 0
       Tension: 0.5
-    - Mode: 0
+    - Mode: 3
       Tension: 0.5
     - Mode: 0
       Tension: 0.5
@@ -3016,9 +3016,9 @@ GameObject:
   m_Component:
   - component: {fileID: 666658611}
   - component: {fileID: 666658612}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BottomOverPass_2_Collider
-  m_TagString: OverpassCollider
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3032,7 +3032,7 @@ Transform:
   m_GameObject: {fileID: 666658610}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.42656872, w: 0.9044552}
-  m_LocalPosition: {x: -136.1, y: -37.9, z: 0}
+  m_LocalPosition: {x: -138.63, y: -39.21, z: 0}
   m_LocalScale: {x: 2, y: 28.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3497,9 +3497,9 @@ GameObject:
   m_Component:
   - component: {fileID: 879042371}
   - component: {fileID: 879042372}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeftUnderPass_2_Collider
-  m_TagString: UnderpassCollider
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3512,13 +3512,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879042370}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.4083305, w: 0.9128342}
-  m_LocalPosition: {x: -136.21, y: -20.27, z: 0}
-  m_LocalScale: {x: 2, y: 27.7, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.42233709, w: 0.9064389}
+  m_LocalPosition: {x: -136.5, y: -19.81, z: 0}
+  m_LocalScale: {x: 2, y: 30.86, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1349464647}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -48.2}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -49.964}
 --- !u!61 &879042372
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4076,9 +4076,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1025398744}
   - component: {fileID: 1025398745}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Border_Colider_Outer_Top
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4774,9 +4774,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1239011230}
   - component: {fileID: 1239011231}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Border_Collider_Inner_Middle
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4922,7 +4922,8 @@ PolygonCollider2D:
       - {x: -136.04698, y: -78.14276}
       - {x: -111.86037, y: -80.95618}
       - {x: -106.20321, y: -79.44426}
-      - {x: -101.042114, y: -77.26082}
+      - {x: -100.70777, y: -77.39155}
+      - {x: -102.174255, y: -76.203476}
       - {x: -109.83601, y: -70.793594}
       - {x: -117.47908, y: -64.712425}
       - {x: -127.66235, y: -54.83099}
@@ -4951,8 +4952,8 @@ PolygonCollider2D:
       - {x: -40.066772, y: -54.586506}
       - {x: -44.178642, y: -60.085453}
       - {x: -51.202065, y: -67.62508}
-      - {x: -58.731663, y: -73.882576}
-      - {x: -56.993443, y: -75.31648}
+      - {x: -59.487614, y: -74.35111}
+      - {x: -57.808327, y: -75.72392}
       - {x: -53.61691, y: -77.56828}
       - {x: -49.34605, y: -79.00391}
       - {x: -42.023205, y: -79.675545}
@@ -4984,9 +4985,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1271010175}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OffRoadColliders
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5063,9 +5064,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1337419229}
   - component: {fileID: 1337419230}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TopOverPass_1_Collider
-  m_TagString: OverpassCollider
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5269,9 +5270,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1371294548}
   - component: {fileID: 1371294549}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Border_Collider_Inner_Left
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5337,38 +5338,40 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -96.23893, y: -11.547529}
-      - {x: -99.91996, y: -13.168021}
-      - {x: -105.52495, y: -16.872087}
-      - {x: -110.21204, y: -21.0602}
-      - {x: -113.504364, y: -24.809921}
-      - {x: -114.67097, y: -26.488716}
-      - {x: -115.64598, y: -28.298656}
-      - {x: -115.21252, y: -29.645782}
-      - {x: -114.36081, y: -31.271807}
-      - {x: -112.68857, y: -33.91288}
-      - {x: -110.498886, y: -36.70032}
-      - {x: -107.68478, y: -39.84542}
-      - {x: -104.86751, y: -42.712482}
-      - {x: -101.478195, y: -45.821667}
-      - {x: -94.271645, y: -51.850628}
-      - {x: -87.4816, y: -56.72863}
-      - {x: -80.84843, y: -60.96003}
-      - {x: -69.11387, y: -50.71688}
-      - {x: -65.91606, y: -47.80999}
-      - {x: -63.267902, y: -45.003586}
-      - {x: -61.388794, y: -42.55576}
-      - {x: -59.946808, y: -40.14697}
-      - {x: -60.437496, y: -38.803825}
-      - {x: -61.581623, y: -36.66768}
-      - {x: -64.37448, y: -32.75208}
-      - {x: -69.921425, y: -26.440886}
-      - {x: -74.095924, y: -22.460455}
-      - {x: -77.34408, y: -19.694836}
-      - {x: -83.28766, y: -15.272526}
-      - {x: -88.47408, y: -12.346155}
-      - {x: -91.36488, y: -11.114964}
-      - {x: -93.25666, y: -10.583662}
+    - - {x: -95.2453, y: -12.179836}
+      - {x: -98.65535, y: -13.529338}
+      - {x: -103.808685, y: -16.781757}
+      - {x: -107.23117, y: -19.43427}
+      - {x: -110.25251, y: -22.732346}
+      - {x: -112.051414, y: -24.772457}
+      - {x: -112.75544, y: -25.826838}
+      - {x: -113.40593, y: -27.658537}
+      - {x: -113.63648, y: -29.461838}
+      - {x: -112.05457, y: -31.164997}
+      - {x: -110.3444, y: -32.687828}
+      - {x: -108.25631, y: -34.950726}
+      - {x: -105.43903, y: -38.206966}
+      - {x: -100.60445, y: -41.616684}
+      - {x: -95.487305, y: -46.148857}
+      - {x: -88.57677, y: -51.49127}
+      - {x: -84.22208, y: -54.074265}
+      - {x: -78.2613, y: -58.84079}
+      - {x: -70.64947, y: -51.89116}
+      - {x: -68.26463, y: -49.706905}
+      - {x: -65.16482, y: -45.635895}
+      - {x: -63.827686, y: -43.368725}
+      - {x: -63.288994, y: -41.682568}
+      - {x: -62.605404, y: -39.52646}
+      - {x: -63.478546, y: -36.75801}
+      - {x: -65.00678, y: -33.655373}
+      - {x: -68.83746, y: -28.518461}
+      - {x: -73.46362, y: -24.53803}
+      - {x: -76.16979, y: -21.682081}
+      - {x: -80.397125, y: -18.434053}
+      - {x: -84.130905, y: -16.072477}
+      - {x: -87.48046, y: -14.152742}
+      - {x: -90.55191, y: -12.108587}
+      - {x: -92.53402, y: -11.486956}
   m_UseDelaunayMesh: 1
 --- !u!1 &1374807377
 GameObject:
@@ -5474,9 +5477,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1404370920}
   - component: {fileID: 1404370921}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BottomOverPass_1_Collider
-  m_TagString: OverpassCollider
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6572,9 +6575,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1661658547}
   - component: {fileID: 1661658548}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TopOverPass_2_Collider
-  m_TagString: OverpassCollider
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6588,7 +6591,7 @@ Transform:
   m_GameObject: {fileID: 1661658546}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.42656872, w: 0.9044552}
-  m_LocalPosition: {x: -116.1, y: -20.3, z: 0}
+  m_LocalPosition: {x: -115.13, y: -18.94, z: 0}
   m_LocalScale: {x: 2, y: 28.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6649,9 +6652,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1667653579}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BorderColliders
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6827,7 +6830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1714764477}
   - component: {fileID: 1714764478}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Border_Collider_Inner_Right
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -7303,9 +7306,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1839509097}
   - component: {fileID: 1839509098}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Border_Collider_Outer_Bottom
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7440,12 +7443,12 @@ PolygonCollider2D:
       - {x: 6.1695385, y: -107.4073}
       - {x: -12.982409, y: -109.252495}
       - {x: -40.565735, y: -107.34632}
-      - {x: -56.19305, y: -102.717064}
-      - {x: -63.893433, y: -99.51582}
-      - {x: -68.63287, y: -96.927216}
-      - {x: -72.40379, y: -94.1069}
-      - {x: -77.49408, y: -90.43513}
-      - {x: -82.14293, y: -94.16775}
+      - {x: -60.44491, y: -105.18484}
+      - {x: -66.28907, y: -103.227776}
+      - {x: -70.95916, y: -100.725266}
+      - {x: -76.5318, y: -97.21729}
+      - {x: -81.508896, y: -93.241356}
+      - {x: -85.618546, y: -97.08278}
       - {x: -93.04485, y: -101.09332}
       - {x: -102.25444, y: -104.38202}
       - {x: -112.28054, y: -106.25151}
@@ -7621,9 +7624,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1884722334}
   - component: {fileID: 1884722335}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeftUnderPass_1_Collider
-  m_TagString: UnderpassCollider
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7699,9 +7702,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1911106381}
   - component: {fileID: 1911106382}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RightUnderPass_2_Collider
-  m_TagString: UnderpassCollider
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7716,7 +7719,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.4083305, w: 0.9128342}
   m_LocalPosition: {x: -116.09, y: -37.35, z: 0}
-  m_LocalScale: {x: 2, y: 26.67, z: 1}
+  m_LocalScale: {x: 2, y: 34.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1349464647}

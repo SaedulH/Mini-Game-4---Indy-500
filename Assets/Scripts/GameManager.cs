@@ -91,8 +91,7 @@ public class GameManager : NonPersistentSingleton<GameManager>
         PlayerTwo = Instantiate(AIPrefab, Vector3.zero, Quaternion.identity);
         PlayerTwo.name = "CPU";
         AIHandler input = PlayerTwo.GetOrAdd<AIHandler>();
-        input.SetDifficulty(difficulty);
-        input.SetWaypointSpline();
+        input.Initialise(difficulty);
 
         VehicleSpriteHandler spriteHandler = PlayerTwo.GetOrAdd<VehicleSpriteHandler>();
         spriteHandler.AssignSprite(vehicle.VisualSettings, vehicle.PlayerTwoVehicleChassisSprite);

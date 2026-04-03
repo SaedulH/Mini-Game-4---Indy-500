@@ -81,16 +81,27 @@ namespace Utilities
         public const float AI_SPLINE_MAX_LOOK_AHEAD = 0.02f;
 
         public const float AI_EASY_MAX_STEERING_ANGLE = 60f;
-        public const float AI_EASY_STEERING_SMOOTH = 0.8f;
+        public const float AI_EASY_STEER_SMOOTHING = 30;
         public const float AI_EASY_MAX_THROTTLE = 0.9f;
-        public const float AI_EASY_MIN_THROTTLE = 0f;
-        public const float AI_EASY_BRAKE_ANGLE = 40f;
+        public const float AI_EASY_MIN_THROTTLE = 0.5f;
+        public const float AI_EASY_MIN_BRAKE_SPEED_FACTOR = 0.6f;
+        public const float AI_EASY_BRAKE_ANGLE = 25f;
+        public const float AI_EASY_BRAKE_TIME = 0.4f;
+        public const float AI_EASY_STUCK_DETECTION_TIME = 1.5f;
 
         public const float AI_HARD_MAX_STEERING_ANGLE = 90f;
-        public const float AI_HARD_STEERING_SMOOTH = 1f;
+        public const float AI_HARD_STEER_SMOOTHING = 60;
         public const float AI_HARD_MAX_THROTTLE = 1f;
-        public const float AI_HARD_MIN_THROTTLE = 0f;
-        public const float AI_HARD_BRAKE_ANGLE = 60f;
+        public const float AI_HARD_MIN_THROTTLE = 0.8f;
+        public const float AI_HARD_MIN_BRAKE_SPEED_FACTOR = 0.8f;
+        public const float AI_HARD_BRAKE_ANGLE = 40f;
+        public const float AI_HARD_BRAKE_TIME = 0.2f;
+        public const float AI_HARD_STUCK_DETECTION_TIME = 0.75f;
+
+        public const float AI_UNSTUCK_DETECTION_TIME = 0.5f;
+        public const float AI_MAX_STUCK_DETECTION_SPEED = 2f;
+        public const float AI_MAX_STUCK_DETECTION_DISTANCE = 5.5f;
+        public const float AI_MAX_CLEAR_DETECTION_DISTANCE = 8f;
 
         public static string FormatTime(float lapTime)
         {
@@ -210,5 +221,12 @@ namespace Utilities
     {
         In,
         Out
+    }
+
+    public enum AIState
+    {
+        Idle,
+        Driving,
+        Reversing
     }
 }
