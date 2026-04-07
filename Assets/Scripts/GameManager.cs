@@ -1,12 +1,9 @@
+using CoreSystem;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using AudioSystem;
-using CoreSystem;
-using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.LowLevel;
 using Utilities;
 
 public class GameManager : NonPersistentSingleton<GameManager>
@@ -22,6 +19,7 @@ public class GameManager : NonPersistentSingleton<GameManager>
 
     [field: SerializeField] public GameObject PlayerPrefab { get; set; }
     [field: SerializeField] public GameObject AIPrefab { get; set; }
+    [field: SerializeField] public AIStats[] AIStats { get; set; }
 
     private InputAction _pauseAction;
     public event Action<GameState> OnGameStateChanged;
@@ -91,7 +89,14 @@ public class GameManager : NonPersistentSingleton<GameManager>
         PlayerTwo = Instantiate(AIPrefab, Vector3.zero, Quaternion.identity);
         PlayerTwo.name = "CPU";
         AIHandler input = PlayerTwo.GetOrAdd<AIHandler>();
-        input.Initialise(difficulty);
+        if (Enum.TryParse(difficulty, out Difficulty parsedDifficulty))
+        {
+            input.Initialise(AIStats[(int)parsedDifficulty]);
+        }
+        else
+        {
+            input.Initialise(AIStats[0]);
+        }
 
         VehicleSpriteHandler spriteHandler = PlayerTwo.GetOrAdd<VehicleSpriteHandler>();
         spriteHandler.AssignSprite(vehicle.VisualSettings, vehicle.PlayerTwoVehicleChassisSprite);
@@ -122,7 +127,7 @@ public class GameManager : NonPersistentSingleton<GameManager>
 
     private void OnPauseInput(InputAction.CallbackContext ctx)
     {
-        switch (CurrentGameState) 
+        switch (CurrentGameState)
         {
             case GameState.Playing:
                 PauseGame();
@@ -159,7 +164,7 @@ public class GameManager : NonPersistentSingleton<GameManager>
 
     public void CompleteRace(int finishedPlayer)
     {
-        if(finishedPlayer == 1)
+        if (finishedPlayer == 1)
         {
             _playerOneCompletedRace = true;
         }
@@ -168,10 +173,10 @@ public class GameManager : NonPersistentSingleton<GameManager>
             _playerTwoCompletedRace = true;
         }
 
-        if (CurrentTrackContext.GameMode == GameMode.Race || 
-            (CurrentTrackContext.GameMode == GameMode.Timed && 
-            (CurrentTrackContext.PlayerCount == 1 || 
-            (CurrentTrackContext.PlayerCount == 2 && 
+        if (CurrentTrackContext.GameMode == GameMode.Race ||
+            (CurrentTrackContext.GameMode == GameMode.Timed &&
+            (CurrentTrackContext.PlayerCount == 1 ||
+            (CurrentTrackContext.PlayerCount == 2 &&
             _playerOneCompletedRace && _playerTwoCompletedRace))))
         {
             GetRaceResults();

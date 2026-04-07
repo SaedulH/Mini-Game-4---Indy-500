@@ -105,3 +105,6 @@ MonoBehaviour:
   <Input>k__BackingField: {fileID: 5950695493843944237}
   <PlayerPrefab>k__BackingField: {fileID: 3018185205297305391, guid: d7d63babdc39e974eabf6731f02aa03e, type: 3}
   <AIPrefab>k__BackingField: {fileID: 3018185205297305391, guid: 9b12fe9029d889f4aaf7f20b845e6087, type: 3}
+  <AIStats>k__BackingField:
+  - {fileID: 11400000, guid: 37bb6120a114d8f41bae43f9f1cd3f4d, type: 2}
+  - {fileID: 11400000, guid: c27d7f2c1128f014fbfcff97d4fb76fc, type: 2}

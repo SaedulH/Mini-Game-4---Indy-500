@@ -24,10 +24,15 @@ public class RaceCompleteScreen : NonPersistentSingleton<RaceCompleteScreen>
     [field: SerializeField] public AudioData QuitAudio { get; set; }
     [field: SerializeField] public AudioData HoverAudio { get; set; }
 
+    protected override void Awake()
+    {
+        base.Awake();
+        Root = GetComponent<UIDocument>().rootVisualElement;
+    }
+
     private void OnEnable()
     {
         GameManager.Instance.OnGameStateChanged += HandleGameStateChanged;
-        Root = GetComponent<UIDocument>().rootVisualElement;
 
         RaceCompleteElement = Root.Q<VisualElement>("RaceComplete");
         RaceCompleteElement.AddToClassList("hideUI");

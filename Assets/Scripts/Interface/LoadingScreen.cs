@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using Utilities;
 
+[RequireComponent(typeof(UIDocument))]
 public class LoadingScreen : NonPersistentSingleton<LoadingScreen>
 {
     [field: SerializeField] public VisualElement Root { get; set; }

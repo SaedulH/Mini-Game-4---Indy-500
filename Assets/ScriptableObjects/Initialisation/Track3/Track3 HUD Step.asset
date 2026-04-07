@@ -15,6 +15,9 @@ MonoBehaviour:
   <Description>k__BackingField: Setting up HUD
   <Weight>k__BackingField: 1
   <StepPriority>k__BackingField: 0
-  <GoldTime>k__BackingField: 84
+  <GoldTime>k__BackingField: 80
+  <HardGoldTime>k__BackingField: 75
   <SilverTime>k__BackingField: 90
-  <BronzeTime>k__BackingField: 96
+  <HardSilverTime>k__BackingField: 80
+  <BronzeTime>k__BackingField: 100
+  <HardBronzeTime>k__BackingField: 85

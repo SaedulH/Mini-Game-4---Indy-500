@@ -19,7 +19,7 @@ public class AIHandler : MonoBehaviour, IInputHandler
     private Vector3 _targetPosition;
 
     [Header("Driving")]
-    [field: SerializeField] public float MaxSteeringAngle { get; private set; }
+    [field: SerializeField] public float SteeringRatio { get; private set; }
     [field: SerializeField] public float SteeringSmooth { get; private set; }
 
     [Header("Speed Control")]
@@ -186,8 +186,14 @@ public class AIHandler : MonoBehaviour, IInputHandler
     {
         Vector2 direction = (_targetPosition - transform.position).normalized;
         float angle = -Vector2.SignedAngle(transform.up, direction);
+        //Debug.Log($"Angle to target: {angle}, Curvature: {_curvature}");
 
-        float targetSteering = Mathf.Clamp(angle / MaxSteeringAngle, -1f, 1f);
+        if (Mathf.Abs(angle) < 1.5f)
+        {
+            angle = 0f;
+        }
+
+        float targetSteering = Mathf.Clamp(angle / SteeringRatio, -1f, 1f);
         if (!isForward)
         {
             targetSteering = -targetSteering;
@@ -195,7 +201,7 @@ public class AIHandler : MonoBehaviour, IInputHandler
         Steering = Mathf.Lerp(
             Steering,
             targetSteering,
-            SteeringSmooth * Time.fixedDeltaTime 
+            SteeringSmooth * Time.fixedDeltaTime
         );
     }
 
@@ -235,16 +241,9 @@ public class AIHandler : MonoBehaviour, IInputHandler
         WaypointSpline = splineObject.GetComponent<SplineContainer>();
     }
 
-    public void Initialise(string difficulty)
+    public void Initialise(AIStats stats)
     {
-        if (Enum.TryParse(difficulty, out Difficulty parsedDifficulty))
-        {
-            SetVariables(parsedDifficulty);
-        }
-        else
-        {
-            SetVariables(Difficulty.Easy);
-        }
+        SetAIStats(stats);
         CurrentAIState = AIState.Driving;
         SetWaypointSpline();
         _isStuck = false;
@@ -253,29 +252,15 @@ public class AIHandler : MonoBehaviour, IInputHandler
         _isActive = true;
     }
 
-    private void SetVariables(Difficulty difficulty)
+    private void SetAIStats(AIStats stats)
     {
-        if (difficulty == Difficulty.Easy)
-        {
-            MaxSteeringAngle = Constants.AI_EASY_MAX_STEERING_ANGLE;
-            SteeringSmooth = Constants.AI_EASY_STEER_SMOOTHING;
-            MaxThrottle = Constants.AI_EASY_MAX_THROTTLE;
-            MinThrottle = Constants.AI_EASY_MIN_THROTTLE;
-            MinBrakeSpeedFactor = Constants.AI_EASY_MIN_BRAKE_SPEED_FACTOR;
-            BrakeAngle = Constants.AI_EASY_BRAKE_ANGLE;
-            BrakeTime = Constants.AI_EASY_BRAKE_TIME;
-            StuckDetectionTime = Constants.AI_EASY_STUCK_DETECTION_TIME;
-        }
-        else
-        {
-            MaxSteeringAngle = Constants.AI_HARD_MAX_STEERING_ANGLE;
-            SteeringSmooth = Constants.AI_HARD_STEER_SMOOTHING;
-            MaxThrottle = Constants.AI_HARD_MAX_THROTTLE;
-            MinThrottle = Constants.AI_HARD_MIN_THROTTLE;
-            MinBrakeSpeedFactor = Constants.AI_HARD_MIN_BRAKE_SPEED_FACTOR;
-            BrakeAngle = Constants.AI_HARD_BRAKE_ANGLE;
-            BrakeTime = Constants.AI_HARD_BRAKE_TIME;
-            StuckDetectionTime = Constants.AI_HARD_STUCK_DETECTION_TIME;
-        }
+        SteeringRatio = stats.SteeringRatio;
+        SteeringSmooth = stats.SteeringSmooth;
+        MaxThrottle = stats.MaxThrottle;
+        MinThrottle = stats.MinThrottle;
+        MinBrakeSpeedFactor = stats.MinBrakeSpeedFactor;
+        BrakeAngle = stats.BrakeAngle;
+        BrakeTime = stats.BrakeTime;
+        StuckDetectionTime = stats.StuckDetectionTime;
     }
 }

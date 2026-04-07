@@ -17,25 +17,25 @@ MonoBehaviour:
   <TrackInfo>k__BackingField: {fileID: 11400000, guid: fdd1a11a18c02d04b96156213fd5bc64, type: 2}
   <TrackContext>k__BackingField:
     GameMode: 0
-    PlayerCount: 2
+    PlayerCount: 1
     VehicleOne:
-      <VehicleName>k__BackingField: Drifter
-      <Stats>k__BackingField: {fileID: 11400000, guid: ac5fa3b6b20551540836c30da613b6b8, type: 2}
-      <VisualSettings>k__BackingField: {fileID: 11400000, guid: cae73a84809aa884185f723070acb4d0, type: 2}
-      <PlayerOneVehicleDisplayIcon>k__BackingField: {fileID: 21300000, guid: e3652c7958957d5488f262618c58c4a2, type: 3}
-      <PlayerOneVehicleChassisSprite>k__BackingField: {fileID: 21300000, guid: 945eb5f2f0698ee47aebe9830b2da96d, type: 3}
-      <PlayerTwoVehicleDisplayIcon>k__BackingField: {fileID: 21300000, guid: b6b652c2213d5104283641a8971ef31f, type: 3}
-      <PlayerTwoVehicleChassisSprite>k__BackingField: {fileID: 21300000, guid: 2fadc07591fb27741931b3f57af28f2d, type: 3}
+      <VehicleName>k__BackingField: All-Rounder
+      <Stats>k__BackingField: {fileID: 11400000, guid: cd5037a6235f0824a8fea5d8a974fdf8, type: 2}
+      <VisualSettings>k__BackingField: {fileID: 11400000, guid: df32fd0ed85c0704a9c4549347b55959, type: 2}
+      <PlayerOneVehicleDisplayIcon>k__BackingField: {fileID: 21300000, guid: 03eb99a10f876be4cbce489a265119ad, type: 3}
+      <PlayerOneVehicleChassisSprite>k__BackingField: {fileID: 21300000, guid: 7121f639b6bd2c0438da3247721b7c13, type: 3}
+      <PlayerTwoVehicleDisplayIcon>k__BackingField: {fileID: 21300000, guid: b944de69f3ce34c44a2505a65d72210f, type: 3}
+      <PlayerTwoVehicleChassisSprite>k__BackingField: {fileID: 21300000, guid: fac61c5ed316b8c41bba2498598d90fd, type: 3}
     VehicleTwo:
-      <VehicleName>k__BackingField: Muscle
-      <Stats>k__BackingField: {fileID: 11400000, guid: 7c81f4a190ccd69468fb34d87e846090, type: 2}
-      <VisualSettings>k__BackingField: {fileID: 11400000, guid: e5a3542a5f5ba1343993b96a5b247343, type: 2}
-      <PlayerOneVehicleDisplayIcon>k__BackingField: {fileID: 21300000, guid: 9ca61208c6b241e4894f5d49d98fd698, type: 3}
-      <PlayerOneVehicleChassisSprite>k__BackingField: {fileID: 21300000, guid: 9e4e0b0a4886e9e44a2ca630a3774b40, type: 3}
-      <PlayerTwoVehicleDisplayIcon>k__BackingField: {fileID: 21300000, guid: 76a901ca2ddcd92439e92e2503aedd48, type: 3}
-      <PlayerTwoVehicleChassisSprite>k__BackingField: {fileID: 21300000, guid: b2de473a5d806e041af1c9ae4eeea52d, type: 3}
+      <VehicleName>k__BackingField: All-Rounder
+      <Stats>k__BackingField: {fileID: 11400000, guid: cd5037a6235f0824a8fea5d8a974fdf8, type: 2}
+      <VisualSettings>k__BackingField: {fileID: 11400000, guid: df32fd0ed85c0704a9c4549347b55959, type: 2}
+      <PlayerOneVehicleDisplayIcon>k__BackingField: {fileID: 21300000, guid: 03eb99a10f876be4cbce489a265119ad, type: 3}
+      <PlayerOneVehicleChassisSprite>k__BackingField: {fileID: 21300000, guid: 7121f639b6bd2c0438da3247721b7c13, type: 3}
+      <PlayerTwoVehicleDisplayIcon>k__BackingField: {fileID: 21300000, guid: b944de69f3ce34c44a2505a65d72210f, type: 3}
+      <PlayerTwoVehicleChassisSprite>k__BackingField: {fileID: 21300000, guid: fac61c5ed316b8c41bba2498598d90fd, type: 3}
     LapCount: 3
     TotalWeight: 13
   <Vehicles>k__BackingField: {fileID: 11400000, guid: 79970dd803758e342b069334087a5af3, type: 2}
-  <PlayerOneVehicle>k__BackingField: 1
-  <PlayerTwoVehicle>k__BackingField: 2
+  <PlayerOneVehicle>k__BackingField: 0
+  <PlayerTwoVehicle>k__BackingField: 0

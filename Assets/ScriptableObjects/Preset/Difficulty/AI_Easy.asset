@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad1d0d5794c3a774992e14e4f23528fd, type: 3}
+  m_Name: AI_Easy
+  m_EditorClassIdentifier: Assembly-CSharp::AIStats
+  <SteeringRatio>k__BackingField: 75
+  <SteeringSmooth>k__BackingField: 40
+  <MaxThrottle>k__BackingField: 0.9
+  <MinThrottle>k__BackingField: 0.5
+  <MinBrakeSpeedFactor>k__BackingField: 0.6
+  <BrakeAngle>k__BackingField: 20
+  <BrakeTime>k__BackingField: 0.4
+  <StuckDetectionTime>k__BackingField: 1.5

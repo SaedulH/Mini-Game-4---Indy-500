@@ -17,7 +17,7 @@ MonoBehaviour:
   <TrackInfo>k__BackingField: {fileID: 11400000, guid: 6eaa8d356e49600478402dcc2e21b9c0, type: 2}
   <TrackContext>k__BackingField:
     GameMode: 0
-    PlayerCount: 2
+    PlayerCount: 1
     VehicleOne:
       <VehicleName>k__BackingField: Racer
       <Stats>k__BackingField: {fileID: 11400000, guid: c9383a0723d48a04e9d3a2059d2df236, type: 2}
