@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CoreSystem.TrackInfo
   <TrackName>k__BackingField: City Spins
   <TrackIndex>k__BackingField: 2
-  <TrackImage>k__BackingField: {fileID: 21300000, guid: d276158f38c2f4d40823b55177e675c3, type: 3}
+  <TrackImage>k__BackingField: {fileID: 21300000, guid: 00ae0c18b01eb5c4d8c8383650381dbf, type: 3}
   <StepOrder>k__BackingField:
   - {fileID: 11400000, guid: a05baf70b00f9c6469b6169895d40185, type: 2}
   - {fileID: 11400000, guid: 2a1b2612a6a97da4fb82a82ad2d0aca9, type: 2}
