@@ -23,7 +23,7 @@ Clone and build this project in Unity to Play:
 
 <img src="./Assets/Gifs/RaceRivalsGameplayPng.png" width="800"/>
 
-<img src="./Assets/Gifs/RaceRivalsSettingsPng.png" width="800"/>
+<img src="./Assets/Gifs/RaceRivalsSettingsGIF.gif" width="800"/>
 
 ## Key Systems
 - Scene Management: Bootstrapper scene to connect CoreScene with Main Menu on Startup, this follows the 'Single Entry Point' architectire architecture with additive scene loading, Dedicated loading screen, Smooth transitions between menus and gameplay. The Core scene houses all the singletons for initialising UI, Audio, levels and setting up players and AI.
