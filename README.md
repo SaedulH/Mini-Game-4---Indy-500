@@ -17,7 +17,7 @@ Race against AI or another player, using WASD/Arrow Keys, and handbrake input to
 In Race Mode, compete to finish first in a circuit race, or in Time trial mode, race against the clock and earn a Gold, Silver or Bronze medal, or if playing 2-Player, win by getting the best lap time within the race. 
 
 Clone and build this project in Unity to Play:
-### 🔗 https://github.com/SaedulH/Mini-Game-4---Race-Rivals.git
+### `https://github.com/SaedulH/Mini-Game-4---Race-Rivals.git`
 
 <img src="./Assets/Gifs/RaceRivalsGameplayGIF.gif" width="800"/> 
 
@@ -41,7 +41,7 @@ Clone and build this project in Unity to Play:
 - Ensuring smooth scene transitions with additive loading.
 - Balancing arcade-style handling with readable track design.
 
-## If I Revisited This Project
+## Future Considerations
 - Add online multiplayer support via peer-to-peer sessions.
 - Expand AI with personality/behaviour variations, allowing overtaking and blocking.
 - Improve vehicle handling differences further.
